@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasil Agora</title>
+    <style>
+        body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+h4 {
+    color:darkgreen;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+.header {
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 5px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+/*CSS FLEXBOX */
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flexbox > div {
+    flex: 1 1 200px;
+    margin: 10px;
+}   
+    </style>
+</head>
+
+<body>
+    
+    <header class="header">
+        <a href="./index.html"><img src="img/bragr.png" alt=""></a>
+        <nav>
+            <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="/">Sobre</a></li>
+                <li><a href="/">Registre-se</a></li>
+                <li><a href="/">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Notícias do dia</h1>
+
+    <section class="flexbox">
+        <div>
+            <h4>Saúde</h4>
+            <a href="pag1.html" target="_blank" rel="external"><img src="./img/saúde.jpeg" alt="coronavac"></a> <!--link na img-->
+            <p><a href="pag1.html" target="_blank" rel="external">Coronavac tem eficácia de 78%</a></p> <!--link no txt-->
+        </div>
+        <div>
+            <h4>Política</h4>
+            <a href="pag2.html" target="_blank" rel="external"><img src="./img/politica.jpg" alt="política"></a>
+            <p><a href="pag2.html" target="_blank" rel="external">Baleia Rossi é apoiado por MDB</a></p>
+        </div>
+        <div>
+            <h4>Mundo</h4>
+            <img src="./img/mundo.jpeg" alt="mundo">
+            <p>Capitólio é invadido nos EUA</p>
+        </div>
+        <div>
+            <h4>Tecnologia</h4>
+            <img src="./img/tech.jpg" alt="tech">
+            <p>Pesquisa realizada pela FGV</p>
+        </div>
+        <div>
+            <h4>Economia</h4>
+            <img src="./img/economia.jpg" alt="economia">
+            <p>Bolsa de Valores tem alta de 1.21%</p>
+        </div>
+        <div>
+            <h4>Esporte</h4>
+            <img src="./img/esporte.jpg" alt="esporte">
+            <p>Flamengo vence São Paulo</p>
+        </div>
+
+        
+    </section>
+
+</body>
+</html>
